@@ -15,7 +15,7 @@
 
 volatile boolean received;
 
-volatile byte Slavereceived[10],Slavesend;
+volatile byte Slavereceived[60],Slavesend;
 
 int buttonvalue;
 
@@ -58,7 +58,10 @@ ISR (SPI_STC_vect)                        //Inerrrput routine function
  // Serial.print(i);
  // Serial.print(Slavereceived[i]); // print Decmal values
   //Serial.print(Slavereceived[i],HEX); // print HexaDecmal values
-  if(i==5){ 
+  // Change the number here as per your expected bytes in the response.
+  // we want to read 6 bytes in a line so we put 5 if 10 bytes response is read it will broken 
+  // into 2 segments of 5 bytes each
+  if(i==59){ 
     Serial.print("\n");   
     i=0;  
   }

@@ -15,7 +15,7 @@ void setup (void)
 
 {
 
-  Serial.begin(115200);                   //Starts Serial Communication at Baud Rate 115200 
+  Serial.begin(9600);                   //Starts Serial Communication at Baud Rate 115200 
 
   
 
@@ -38,7 +38,11 @@ void loop(void)
 
 {
 
-  byte Mastersend[6] = {0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A},Mastereceive;          
+  byte Mastersend[60] = {0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A, 0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A,
+                         0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A, 0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A,
+                         0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A, 0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A,
+                         0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A, 0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A,
+                         0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A, 0x50, 0x41, 0x4E, 0x4B, 0x41, 0x4A},Mastereceive;          
 
 
   buttonvalue = digitalRead(ipbutton);   //Reads the status of the pin 2
@@ -68,7 +72,7 @@ void loop(void)
 
   //Mastersend[4] = "ABCD"; 
   int i=0;
-  for(i=0;i<=5;i++)
+  for(i=0;i<=59;i++)
   {                           
   Mastereceive=SPI.transfer(Mastersend[i]); //Send the mastersend value to slave also receives value from slave
   delayMicroseconds(10); // we should not go below this as chanses of bytes getting lost on Slave UNO
