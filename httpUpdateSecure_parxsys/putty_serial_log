@@ -1,0 +1,184 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2023.05.26 19:50:17 =~=~=~=~=~=~=~=~=~=~=~=
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:1184
+load:0x40078000,len:13220
+ho 0 tail 12 room 4
+load:0x40080400,len:3028
+entry 0x400805e4
+[    23][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+
+
+
+[SETUP] WAIT 4...
+[SETUP] WAIT 3...
+[SETUP] WAIT 2...
+[SETUP] WAIT 1...
+[  4061][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[  4152][I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: SANT 2.4GZ
+[  4152][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started
+[  4154][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 2 - STA_START
+[  7342][V][WiFiGeneric.cpp:383] _arduino_event_cb(): SCAN Done: ID: 128, Status: 0, Results: 7
+[  7343][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 1 - SCAN_DONE
+[  7347][I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+[  7352][I][WiFiMulti.cpp:119] run(): [WIFI] 7 networks found
+[  7358][D][WiFiMulti.cpp:149] run():  --->   0: [13][78:17:35:B3:63:79] SANT 2.4GZ (-55) *
+[  7366][D][WiFiMulti.cpp:151] run():        1: [1][8C:A3:99:F4:86:41] Airtel_JCPS (-67) *
+[  7374][D][WiFiMulti.cpp:151] run():        2: [10][10:27:F5:36:78:B3] TP-Link_78B3 (-75) *
+[  7382][D][WiFiMulti.cpp:151] run():        3: [7][40:33:06:32:2F:CF] Siddhartha (-84) *
+[  7390][D][WiFiMulti.cpp:151] run():        4: [6][8C:A3:99:24:C9:09] Airtel_JCPS (-91) *
+[  7398][D][WiFiMulti.cpp:151] run():        5: [11][24:0B:88:21:56:59] surprise (-92) *
+[  7405][D][WiFiMulti.cpp:151] run():        6: [7][40:33:06:AF:C7:C9] CATALYST (-93) *
+[  7413][I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 78:17:35:B3:63:79 SSID: SANT 2.4GZ Channel: 13 (-55)
+[  7425][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[  7646][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: SANT 2.4GZ, BSSID: 78:17:35:b3:63:79, Channel: 13, Auth: WPA_WPA2_PSK
+[  7648][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 4 - STA_CONNECTED
+[  7774][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.1.87
+[  7775][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 7 - STA_GOT_IP
+[  7778][D][WiFiGeneric.cpp:1098] _eventCallback(): STA IP: 192.168.1.87, MASK: 255.255.255.0, GW: 192.168.1.254
+[  7788][I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+[  7793][D][WiFiMulti.cpp:175] run(): [WIFI] SSID: SANT 2.4GZ
+[  7799][D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.1.87
+[  7804][D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 78:17:35:B3:63:79
+[  7810][D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 13
+Waiting for NTP time sync: ..........
+Current time: Fri May 26 14:20:22 2023
+[ 12826][V][HTTPClient.cpp:252] beginInternal(): url: https://device.parxsys.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a1a9dfaad0f315cebabf4d9dc26ea5f89f42c490/GET_MAC.ino.bin
+[ 12840][D][HTTPClient.cpp:303] beginInternal(): protocol: https, host: device.parxsys.com port: 443 url: /rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a1a9dfaad0f315cebabf4d9dc26ea5f89f42c490/GET_MAC.ino.bin
+[ 13585][D][HTTPClient.cpp:598] sendRequest(): request type: 'GET' redirCount: 0
+
+[ 13688][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 248388
+[ 13688][V][ssl_client.cpp:68] start_ssl_client(): Starting socket
+[ 13702][V][ssl_client.cpp:146] start_ssl_client(): Seeding the random number generator
+[ 13703][V][ssl_client.cpp:155] start_ssl_client(): Setting up the SSL/TLS structure...
+[ 13707][V][ssl_client.cpp:178] start_ssl_client(): Loading CA cert
+[ 13718][V][ssl_client.cpp:254] start_ssl_client(): Setting hostname for TLS session...
+[ 13720][V][ssl_client.cpp:269] start_ssl_client(): Performing the SSL/TLS handshake...
+[ 14377][V][ssl_client.cpp:290] start_ssl_client(): Verifying peer X.509 certificate...
+[ 14378][V][ssl_client.cpp:298] start_ssl_client(): Certificate verified.
+[ 14381][V][ssl_client.cpp:313] start_ssl_client(): Free internal heap after TLS 206228
+[ 14389][D][HTTPClient.cpp:1170] connect():  connected to device.parxsys.com:443
+[ 14396][V][ssl_client.cpp:369] send_ssl_data(): Writing HTTP request with 678 bytes...
+[ 14430][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'HTTP/1.1 302 Found'
+[ 14430][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Server: nginx/1.18.0 (Ubuntu)'
+[ 14434][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Date: Fri, 26 May 2023 14:20:23 GMT'
+[ 14443][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Content-Type: text/html; charset=utf-8'
+[ 14452][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Connection: close'
+[ 14459][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Frame-Options: SAMEORIGIN'
+[ 14467][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-XSS-Protection: 1; mode=block'
+[ 14475][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Content-Type-Options: nosniff'
+[ 14484][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Download-Options: noopen'
+[ 14491][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Permitted-Cross-Domain-Policies: none'
+[ 14501][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Referrer-Policy: strict-origin-when-cross-origin'
+[ 14513][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Location: https://device.parxsys.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaV1poZUcxbmNIQmtjM0ZtTm1rMmJURTBkR3QyWTNsNllUQm1hZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkhSVlJmVFVGRExtbHVieTVpYVc0aU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowZEZWRjlOUVVNdWFXNXZMbUpwYmdZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUhXRndjR3hwWTJGMGFXOXVMMjlqZEdWMExYTjBjbVZoYlFZN0JsUT0iLCJleHAiOiIyMDIzLTA1LTI2VDE0OjI1OjIzLjY4NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e46d25dfac300f09371bc7c15dc7222f800d6e42/GET_MAC.ino.bin?content_type=application%2Foctet-stream&disposition=attachment%3B+filename%3D%22GET_MAC.ino.bin%22%3B+filename%2A%3DUTF-8%27%27GET_MAC.ino.bin'
+[ 14576][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Cache-Control: max-age=300, private'
+[ 14585][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Request-Id: c69442f9-a1ff-467f-b8fc-b250a6585501'
+[ 14595][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Runtime: 0.007067'
+[ 14602][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Strict-Transport-Security: max-age=31536000; includeSubDomains'
+[ 14613][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Vary: Origin'
+[ 14619][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: ''
+[ 14625][D][HTTPClient.cpp:1321] handleHeaderResponse(): code: 302
+[ 14631][D][HTTPClient.cpp:642] sendRequest(): sendRequest code=302
+
+[ 14637][D][HTTPClient.cpp:685] sendRequest(): following redirect (dropped to GET/HEAD): 'https://device.parxsys.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaV1poZUcxbmNIQmtjM0ZtTm1rMmJURTBkR3QyWTNsNllUQm1hZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkhSVlJmVFVGRExtbHVieTVpYVc0aU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowZEZWRjlOUVVNdWFXNXZMbUpwYmdZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUhXRndjR3hwWTJGMGFXOXVMMjlqZEdWMExYTjBjbVZoYlFZN0JsUT0iLCJleHAiOiIyMDIzLTA1LTI2VDE0OjI1OjIzLjY4NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e46d25dfac300f09371bc7c15dc7222f800d6e42/GET_MAC.ino.bin?content_type=application%2Foctet-stream&disposition=attachment%3B+filename%3D%22GET_MAC.ino.bin%22%3B+filename%2A%3DUTF-8%27%27GET_MAC.ino.bin' redirCount: 1
+
+[ 14706][D][HTTPClient.cpp:388] disconnect(): still data in buffer (752), clean up.
+
+[ 14713][D][HTTPClient.cpp:395] disconnect(): tcp stop
+[ 14720][V][ssl_client.cpp:321] stop_ssl_socket(): Cleaning SSL connection.
+[ 14725][V][HTTPClient.cpp:252] beginInternal(): url: https://device.parxsys.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaV1poZUcxbmNIQmtjM0ZtTm1rMmJURTBkR3QyWTNsNllUQm1hZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkhSVlJmVFVGRExtbHVieTVpYVc0aU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowZEZWRjlOUVVNdWFXNXZMbUpwYmdZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUhXRndjR3hwWTJGMGFXOXVMMjlqZEdWMExYTjBjbVZoYlFZN0JsUT0iLCJleHAiOiIyMDIzLTA1LTI2VDE0OjI1OjIzLjY4NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e46d25dfac300f09371bc7c15dc7222f800d6e42/GET_MAC.ino.bin?content_type=application%2Foctet-stream&disposition=attachment%3B+filename%3D%22GET_MAC.ino.bin%22%3B+filename%2A%3DUTF-8%27%27GET_MAC.ino.bin
+[ 14789][D][HTTPClient.cpp:303] beginInternal(): protocol: https, host: device.parxsys.com port: 443 url: /rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaV1poZUcxbmNIQmtjM0ZtTm1rMmJURTBkR3QyWTNsNllUQm1hZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSkhSVlJmVFVGRExtbHVieTVpYVc0aU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowZEZWRjlOUVVNdWFXNXZMbUpwYmdZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUhXRndjR3hwWTJGMGFXOXVMMjlqZEdWMExYTjBjbVZoYlFZN0JsUT0iLCJleHAiOiIyMDIzLTA1LTI2VDE0OjI1OjIzLjY4NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e46d25dfac300f09371bc7c15dc7222f800d6e42/GET_MAC.ino.bin?content_type=application%2Foctet-stream&disposition=attachment%3B+filename%3D%22GET_MAC.ino.bin%22%3B+filename%2A%3DUTF-8%27%27GET_MAC.ino.bin
+[ 14855][D][HTTPClient.cpp:598] sendRequest(): request type: 'GET' redirCount: 1
+
+[ 14863][V][ssl_client.cpp:62] start_ssl_client(): Free internal heap before TLS 246624
+[ 14870][V][ssl_client.cpp:68] start_ssl_client(): Starting socket
+[ 14925][V][ssl_client.cpp:146] start_ssl_client(): Seeding the random number generator
+[ 14926][V][ssl_client.cpp:155] start_ssl_client(): Setting up the SSL/TLS structure...
+[ 14930][V][ssl_client.cpp:178] start_ssl_client(): Loading CA cert
+[ 14942][V][ssl_client.cpp:254] start_ssl_client(): Setting hostname for TLS session...
+[ 14944][V][ssl_client.cpp:269] start_ssl_client(): Performing the SSL/TLS handshake...
+[ 15607][V][ssl_client.cpp:290] start_ssl_client(): Verifying peer X.509 certificate...
+[ 15608][V][ssl_client.cpp:298] start_ssl_client(): Certificate verified.
+[ 15611][V][ssl_client.cpp:313] start_ssl_client(): Free internal heap after TLS 204968
+[ 15620][D][HTTPClient.cpp:1170] connect():  connected to device.parxsys.com:443
+[ 15626][V][ssl_client.cpp:369] send_ssl_data(): Writing HTTP request with 1168 bytes...
+[ 15700][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'HTTP/1.1 200 OK'
+[ 15701][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Server: nginx/1.18.0 (Ubuntu)'
+[ 15705][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Date: Fri, 26 May 2023 14:20:24 GMT'
+[ 15713][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Content-Type: application/octet-stream'
+[ 15722][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Content-Length: 266880'
+[ 15730][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Connection: close'
+[ 15737][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Frame-Options: SAMEORIGIN'
+[ 15745][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-XSS-Protection: 1; mode=block'
+[ 15753][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Content-Type-Options: nosniff'
+[ 15761][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Download-Options: noopen'
+[ 15769][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Permitted-Cross-Domain-Policies: none'
+[ 15778][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Referrer-Policy: strict-origin-when-cross-origin'
+[ 15788][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Last-Modified: Fri, 19 May 2023 10:18:04 GMT'
+[ 15798][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Content-Disposition: attachment; filename="GET_MAC.ino.bin"; filename*=UTF-8''GET_MAC.ino.bin'
+[ 15811][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Cache-Control: max-age=0, private, must-revalidate'
+[ 15821][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Request-Id: 630dd94e-7ce6-42f4-8902-e7286039418b'
+[ 15831][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'X-Runtime: 0.004367'
+[ 15839][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Strict-Transport-Security: max-age=31536000; includeSubDomains'
+[ 15850][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: 'Vary: Origin'
+[ 15856][V][HTTPClient.cpp:1264] handleHeaderResponse(): RX: ''
+[ 15862][D][HTTPClient.cpp:1321] handleHeaderResponse(): code: 200
+[ 15868][D][HTTPClient.cpp:1324] handleHeaderResponse(): size: 266880
+[ 15874][D][HTTPClient.cpp:642] sendRequest(): sendRequest code=200
+
+[ 15880][D][HTTPUpdate.cpp:244] handleUpdate(): Header read fin.
+
+[ 15886][D][HTTPUpdate.cpp:245] handleUpdate(): Server header:
+
+[ 15891][D][HTTPUpdate.cpp:246] handleUpdate():  - code: 200
+
+[ 15897][D][HTTPUpdate.cpp:247] handleUpdate():  - len: 266880
+
+[ 15903][D][HTTPUpdate.cpp:253] handleUpdate(): ESP32 info:
+
+[ 15908][D][HTTPUpdate.cpp:254] handleUpdate():  - free Space: 1310720
+
+[ 15915][D][HTTPUpdate.cpp:255] handleUpdate():  - current Sketch Size: 962528
+
+[ 16207][D][HTTPUpdate.cpp:312] handleUpdate(): runUpdate flash...
+
+[ 16208][D][Updater.cpp:133] begin(): OTA Partition: app0
+
+abort() was called at PC 0x40081fe2 on core 1
+
+
+Backtrace: 0x40083731:0x3ffb1e20 0x4008d48d:0x3ffb1e40 0x40092ca9:0x3ffb1e60 0x40081fe2:0x3ffb1ee0 0x400e75a3:0x3ffb1f30 0x400dfaa9:0x3ffb1f50 0x400df3b1:0x3ffb1f70 0x400df682:0x3ffb1f90 0x400ddf2d:0x3ffb1fb0 0x400de9fe:0x3ffb2020 0x400ded9d:0x3ffb20d0 0x400d33b5:0x3ffb21d0 0x400e2bc1:0x3ffb2290
+
+
+
+
+ELF file SHA256: a5b8033507531edc
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:1184
+load:0x40078000,len:13220
+ho 0 tail 12 room 4
+load:0x40080400,len:3028
+entry 0x400805e4
+[    23][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+
+
+
+[SETUP] WAIT 4...
+[SETUP] WAIT 3...
+[SETUP] WAIT 2...
+[SETUP] WAIT 1...
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download

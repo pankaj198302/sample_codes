@@ -6,8 +6,8 @@
 // #define TXD2 12
 
  // Here We are testing with NINA-W106  -- Refer NINA-EVK USer Guide Working NINA-W106 MOP 16 and MOP 17 Working
- //#define RXD2 26
- //#define TXD2 25
+ #define RXD2 26
+ #define TXD2 25
   // Here We are testing with NINA-W106  -- Refer NINA-EVK USer Guide Working NINA-W106 MOP 20 and MOP 21 Working
  //#define RXD2 22
  //#define TXD2 19
@@ -16,7 +16,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   Serial2.begin(115200, SERIAL_8N1, RXD2, TXD2);
-  delay(1000*5);
+  delay(1000);
   Serial.println("Loopback program started");
 
 }
