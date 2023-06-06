@@ -16,6 +16,7 @@ Sample code list for testing
 # Creating Partition for OTA
 
 C:\Users\Lenovo\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.9\tools>gen_esp32part.exe --help
+
 usage: gen_esp32part.exe [-h] [--flash-size [{1MB,2MB,4MB,8MB,16MB}]]
                          [--disable-md5sum] [--no-verify] [--verify] [--quiet]
                          [--offset OFFSET] [--secure]
