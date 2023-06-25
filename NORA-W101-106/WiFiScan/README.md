@@ -37,6 +37,10 @@ Nr | SSID            | RSSI | CH | Encryption
  5 | IoTNetwork2     |  -64 | 11 | WPA2+WPA3
 ...
 ```
+The output is redirected to USB, UART0 and UART1 as seen in the below image: 
+![Alt text](https://github.com/pankaj198302/sample_codes/blob/main/NORA-W101-106/WiFiScan/UART0-USB%20Print.png?raw=true "Title")
+
+
 
 ## Troubleshooting
 
