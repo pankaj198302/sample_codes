@@ -40,6 +40,10 @@ Nr | SSID            | RSSI | CH | Encryption
 The output is redirected to USB, UART0 and UART1 as seen in the below image: 
 ![Alt text](https://github.com/pankaj198302/sample_codes/blob/main/NORA-W101-106/WiFiScan/UART0-USB%20Print.png?raw=true "Title")
 
+Below is the link to the screen record: 
+
+https://github.com/pankaj198302/sample_codes/assets/67203272/6a1ae68f-114b-442b-b5da-5f95186408e4
+
 
 
 ## Troubleshooting
